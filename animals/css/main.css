@@ -1,0 +1,54 @@
+:root {
+    --background-color: #f5f5dc; /* beige */
+    --heading-color: #333333; /* dark grey */
+    --figcaption-background: #d2b48c; /* tan */
+    --figure-background: #8b4513; /* brown */
+    --border-radius: 20px; /* new border-radius */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    color: var(--heading-color);
+}
+
+figure img {
+    display: block;
+    width: 450px;
+    height: auto;
+    border-radius: var(--border-radius);
+    margin-bottom: 1.25em;
+}
+
+figure figcaption {
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    background: var(--figcaption-background);
+    padding: 1.25em;
+    border-radius: var(--border-radius);
+}
+
+figure {
+    margin: 0px 15px 0px auto; /* top right bottom left */
+    display: inline-block;
+    padding: 1.25em;
+    background: var(--figure-background);
+    border-radius: var(--border-radius);
+}
+
+section {
+    width: 65%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.25em;
+}
