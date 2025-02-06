@@ -1,0 +1,25 @@
+.card {
+    width: 250px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 4px lightgray;
+    border-radius: 5px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h2 {
+    text-align: center;
+    writing-mode: vertical-lr;
+    float: left;
+    margin: 10px 0;
+}
+
+.card figcaption {
+    text-align: center;
+}
+
+.card p {
+    margin: 5px;
+}
