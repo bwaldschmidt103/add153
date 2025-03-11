@@ -1,0 +1,205 @@
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+    background-color: #eab515;
+    color: white;
+    padding: 20px 0;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header img {
+    width: 80vw;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 3px solid #ccc;
+}
+
+.text {
+    text-align: left;
+    padding: 10px;
+}
+
+.text .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d32f2f;
+    margin: 0;
+}
+
+.text .description {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 5px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.ad {
+    background-color: #eab515;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+a {
+    color: #4285f4;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff5722;
+    text-decoration: underline;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 3px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img[alt="Fiora Bath Tissues"] {
+    width: 600px;
+    height: auto;
+}
+
+.item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    border-color: #ff5722;
+}
+
+.large-item {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.description {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.text .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d32f2f;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.text .description {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 5px;
+}
+
+.item .text {
+    position: static;
+    background-color: transparent;
+    color: #000;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.footer {
+    background-color: #eab515;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.footer .icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.footer .icons img {
+    max-width: 1000px;
+    height: auto;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.icons img,
+.digital-coupons img {
+    width: 80vw;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .ad,
+    .header {
+        text-align: center;
+        font-size: 1rem;
+    }
+    img[alt="Fiora Bath Tissues"] {
+        width: 150px;
+    }
+}
