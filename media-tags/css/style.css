@@ -1,0 +1,83 @@
+/* Base Styles */
+
+body {
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 1.6;
+    text-align: center;
+}
+
+
+/* Background Colors for Responsiveness */
+
+body {
+    background-color: red;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+    body {
+        background-color: green;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        background-color: yellow;
+    }
+}
+
+
+/* CSS Grid Layout */
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+}
+
+
+/*Grid templates */
+
+@media only screen and (max-width: 599px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+article {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-size: 0.9rem;
+}
