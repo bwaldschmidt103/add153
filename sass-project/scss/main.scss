@@ -85,7 +85,6 @@ body, html {
   background-color: $neutral-gray; /* Subtle background for all pages */
   color: $amethyst-purple; /* Default text color */
   font-family: $body-font-family;
-  overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
 /* General Typography */
@@ -124,11 +123,6 @@ body, html {
   color: $amethyst-purple; /* Default text color */
 }
 
-main {
-  max-width: 100vw; /* Ensures the main content takes full width */
-  overflow-x: hidden; /* Prevents horizontal scrolling */
-}
-
 /* Navigation Bar */
 .navbar {
   display: flex;
@@ -138,29 +132,22 @@ main {
   padding: 10px 20px;
 
   /* Logo Container */
-  .navbar {
-    position: fixed; /* Keeps the header locked at the top */
-    top: 0;
-    left: 0;
-    width: 100%; /* Ensures the header spans the full width of the viewport */
-    box-sizing: border-box; /* Includes padding and border in total width/height */
-    background-color: #6A5ACD; /* Mystic purple color */
-    color: #FFFFFF;
-    padding: 10px 20px; /* Adds inner spacing */
-    z-index: 1000; /* Ensures the header stays on top of all other content */
-    
-    .logo-container,
-    .nav-links,
-    .search-container {
-      max-width: 1200px; /* Restricts the header's inner content width */
-      margin: 0 auto; /* Centers the header content */
-      display: flex;
-      flex-wrap: wrap; /* Prevents content spilling */
-      align-items: center;
-      justify-content: space-between; /* Distributes content evenly */
+  .logo-container {
+    display: flex;
+    align-items: center;
+
+    .logo {
+      width: 50px;
+      height: auto;
+      margin-right: 10px;
+    }
+
+    h1 {
+      color: $navbar-font-color;
+      font-size: 1.5em;
+      margin: 0;
     }
   }
-  
 
   /* Navigation Links */
   .nav-links {
