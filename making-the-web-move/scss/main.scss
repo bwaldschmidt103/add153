@@ -1,0 +1,101 @@
+.picture {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    animation: square-path 4s linear 1; /* Animation for the square path */
+}
+
+@keyframes square-path {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    25% {
+        top: 0;
+        left: 300px;
+    }
+    50% {
+        top: 300px;
+        left: 300px;
+    }
+    75% {
+        top: 300px;
+        left: 0;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+.card {
+    width: 150px;
+    height: 200px;
+    background-color: red;
+    border-radius: 10px;
+    margin: 50px;
+    animation: spin 5s ease-in-out 1; /* Animation for the card spin */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(1800deg);
+    }
+}
+
+.star {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #ffcc00;
+    position: relative;
+}
+
+.star::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: -50px;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid #ffcc00;
+    transform: rotate(35deg);
+}
+
+.arrow-container {
+    position: relative; /* Container ensures proper positioning */
+    width: 100px; /* Optional: Adjust to fit your arrow size */
+    height: 100px;
+}
+
+.arrow {
+    width: 50px; /* Adjust based on the size of the arrow image */
+    position: absolute;
+    animation: move-arrow 4s linear 1; /* Moves the arrow once */
+}
+
+@keyframes move-arrow {
+    0% {
+        transform: translate(0, 0) rotate(0deg); /* Pointing right */
+    }
+    25% {
+        transform: translate(300px, 0) rotate(90deg); /* Pointing down */
+    }
+    50% {
+        transform: translate(300px, 300px) rotate(180deg); /* Pointing left */
+    }
+    75% {
+        transform: translate(0, 300px) rotate(270deg); /* Pointing up */
+    }
+    100% {
+        transform: translate(0, 0) rotate(0deg); /* Back to original */
+    }
+}
