@@ -1,0 +1,17 @@
+h1 {
+    position: absolute;
+    top: 10%;
+    font-size: 3em;
+    z-index: 100;
+}
+
+img {
+    width: 15%;
+    height: 25%;
+    position: absolute;
+    top: 30%;
+}
+
+section {
+    height: 1000vh;
+}
